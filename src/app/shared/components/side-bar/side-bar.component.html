@@ -1,0 +1,47 @@
+<h2>Países</h2>
+<hr />
+
+<ul class="list-group">
+  <!--routerLinkActive: Añade calse de estilos si la ruta es la seleccionada
+   [routerLinkActiveOptions]="{ exact: true }" : Como la page home tiene un path de un string vacio cumpliria siempre la condicion de active, hay que indicarle que siempre debe ser exactamente un string vacio
+  -->
+  <!--
+
+  <li
+    routerLink=""
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="list-group-item"
+  >
+    Home Page
+  </li>
+  <li routerLink="about" routerLinkActive="active" class="list-group-item">
+    About Page
+  </li>
+  <li routerLink="contact" routerLinkActive="active" class="list-group-item">
+    Contact Page
+  </li>
+  -->
+
+  <li
+    routerLink="countries/by-capital"
+    routerLinkActive="active"
+    class="list-group-item"
+  >
+    Por Capital
+  </li>
+  <li
+    routerLink="countries/by-country"
+    routerLinkActive="active"
+    class="list-group-item"
+  >
+    Por país
+  </li>
+  <li
+    routerLink="countries/by-region"
+    routerLinkActive="active"
+    class="list-group-item"
+  >
+    Por region
+  </li>
+</ul>
